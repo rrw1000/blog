@@ -6,3 +6,6 @@ services:
     branch: main
     buildCommand: hugo --gc --minify
     staticPublishPath: public
+    domains:
+       - blog.semiramis.org.uk
+
