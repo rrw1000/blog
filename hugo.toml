@@ -1,3 +1,97 @@
 baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+languageCode = 'en-gb'
+theme = 'hugo-texify2'
+disqusShortname = "Richard's blog"
+enableGitInfo = true
+enableRobotsTXT=true
+hasCJKLanguage = false
+paginate = 5
+rssLimit = 10
+title = "Richard's blog"
+
+[markup]
+defaultMarkdownHandler = "goldmark"
+[markup.goldmark.renderer]
+unsafe= true
+[markup.highlight]
+style = "emacs"
+[markup.tableOfContents]
+  endLevel = 6
+  ordered = false
+  startLevel = 2
+
+
+[author]
+email="rrw@semiramis.org.uk"
+name="Richard Watts"
+
+
+[[menu.main]]
+identifier = "post"
+name = "Posts"
+url = "/"
+weight = 1
+[[menu.main]]
+identifier = "archives"
+name = "Archive"
+url = "/post/"
+weight = 2
+[[menu.main]]
+identifier = "about"
+name = "About"
+url = "/about/"
+weight = 3
+
+[taxonomies]
+tags = "tags"
+
+[params]
+numberedSubtitles = true
+toc = true
+title="Richard's Blog"
+description="Random notes, mostly to myself"
+footnote = """
+Follow me absolutely nowhere
+"""
+keywords = [ "blog" ]
+customCSS = []
+customJS = []
+dateFormat="2006-01-02 03:04:05"
+# 2024-08-13T11:59:00"
+emphasisWithDots = true
+since="2024"
+showWordCount = true
+showReadingTime = true
+rootFontSize = "120%"
+math = true
+enableDuckDuckGoSearchBox = true
+
+[params.commentEngine]
+code = """
+<script src="https://giscus.app/client.js"
+        data-repo="weastur/hugo-texify2"
+        data-repo-id="R_kgDOJwiYnA"
+        data-category="Comments"
+        data-category-id="DIC_kwDOJwiYnM4CXVgQ"
+        data-mapping="title"
+        data-strict="1"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="light"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+"""
+
+[params.sharingbuttons]
+facebook = true
+twitter = true
+email = true
+linkedin = true
+reddit = true
+whatsapp = true
+hackernews = true
+telegram = true
