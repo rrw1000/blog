@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://blog.rrw.semiramis.org.uk/'
 languageCode = 'en-gb'
 theme = 'hugo-texify2'
 disqusShortname = "Richard's blog"
