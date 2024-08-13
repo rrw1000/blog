@@ -1,0 +1,7 @@
+services:
+  - type: web
+    runtime: static
+    repo: https://github.com/rrw1000/blog.git
+    branch: main
+    buildCommand: hugo --gc --minify
+    staticPublishPath: public

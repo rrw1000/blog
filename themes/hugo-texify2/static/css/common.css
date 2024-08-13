@@ -87,11 +87,12 @@ time {
     background-color: #FAFAFA;
     display: flex;
     flex-direction: column;
-    font-family: 'Latin Modern Roman', 'Times New Roman', serif;
+    font-family: 'Latin Modern Mono', 'monospace';
     min-height: 100vh;
     overflow-wrap: break-word;
     padding: 1rem;
 }
+
 
 .link {
     color: #AA0000;
@@ -168,8 +169,9 @@ time {
 #footer {
     align-items: center;
     display: flex;
-    font-size: .9rem;
+    font-size: .8rem;
     flex-direction: column;;
+    font-family: sans-serif;
 }
 
 #footer > .footnote {
