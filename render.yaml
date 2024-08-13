@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: bloghtml
+    name: rrwblog
     runtime: static
     repo: https://github.com/rrw1000/blog.git
     branch: main
