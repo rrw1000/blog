@@ -47,4 +47,17 @@ So, now seems like a good time to look at hosting options:
    good and do seem to be making quite a lot of progress -
    https://fly.io/blog/ is a good read, in the main)
 
+This turns out to be moderately nifty - render is trying to be heroku
+fairly hard, but does (ultimately) support IAC via
+[blueprints](https://docs.render.com/blueprint-spec), and the trick of
+putting a `render.yaml` in the same repo you're trying to ship seems
+to work fine.
 
+That said, both fly and render tend towards k8s as deployments get
+more complex; I can't help thinking that this is a problem with the
+way we write software rather than a problem with k8s - we end up
+building more and more complex mechanisms for diminishing benefit
+until we end up with something very marginally better than the last
+thing in return for a great deal more effort.
+
+But more of that in a future post ...

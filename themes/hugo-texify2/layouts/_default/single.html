@@ -6,7 +6,7 @@
 {{ define "main" }}
 <main id="main" class="post">
   {{ if ne .Section "post"}}
-  <article class="content {{ if .Site.Params.numberedSubtitles }}numbered-subtitles{{ end }}">
+  <article class="content {{ if .Site.Params.numberedSubtitles }}numbered-subtitles{{ end }} {{ if .Param "aboutPage"}}about-page{{end}}">
     {{ .Content }}
   </article>
 
@@ -36,7 +36,6 @@
     {{ .Content }}
     {{ end }}
   </article>
-  {{ partial "sharingbuttons.html" . }}
   <div class="paginator">
     {{ if .PrevInSection }}
     <a class="link" href="{{ .PrevInSection.Permalink }}">← prev</a>
@@ -49,9 +48,10 @@
     <a></a>
     {{ end }}
   </div>
+  <hr class="separator-bar" />
+  {{ partial "sharingbuttons.html" . }}
+  <br />
   <div class="comment">
-    <!-- disqus -->
-    {{ template "_internal/disqus.html" . }}
     <!-- generic engine -->
     {{ .Site.Params.commentEngine.code | safeHTML }}
   </div>

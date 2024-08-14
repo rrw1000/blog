@@ -1,3 +1,4 @@
+
 .content .MathJax {
     font-size: 100%!important;
     overflow-x: auto;
@@ -179,12 +180,6 @@
     content: counter(section-h2) "." counter(section-h3) "." counter(section-h4) "." counter(section-h5) "." counter(section-h6) " ";
 }
 
-
-
-
-
-
-
 .toc.numbered-subtitles {
     counter-reset: ul-h2;
 }
@@ -228,4 +223,9 @@
 .toc.numbered-subtitles li li li li li:before {
     counter-increment: ul-h6;
     content: counter(ul-h2) "." counter(ul-h3) "." counter(ul-h4) "." counter(ul-h5) "." counter(ul-h6) " ";
+}
+
+.content.about-page {
+  font-size: 90%;
+  font-family: sans-serif
 }
