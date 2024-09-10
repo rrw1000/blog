@@ -1,10 +1,10 @@
 +++
 author = "rrw"
 title = "Hello world!"
-date = "2024-08-13"
+date = "2024-08-12"
 description = "A first post"
 tags = [ ]
-weight = "3"
+weight = "1"
 +++
 
 Welcome to Richard's blog. This is the latest of many, many attempts

@@ -4,7 +4,7 @@ title = "Hosting blogs"
 date = "2024-08-13"
 description = "Hosting this blog"
 tags = [ ]
-weight = "2"
+weight = "1"
 +++
 
 So, I've used a bunch of blogging platforms over the years, and not
